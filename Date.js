@@ -4,7 +4,7 @@ Date.prototype.getMonthName = function (lang) {
     return Date.locale[lang].month_names[this.getMonth()];
 };
 
-Date.prototype.getMonthNameShort = function (lang) {
+Date.prototype.getMonthNameAbbrev = function (lang) {
     'use strict';
     lang = lang && (Date.locale.hasOwnProperty(lang)) ? lang : 'en';
     return Date.locale[lang].month_names_short[this.getMonth()];
